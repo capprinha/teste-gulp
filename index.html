@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./build/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <main>
+            <header>
+                <h1>CADASTRO</h1>
+            </header>
+            <form>
+                <label for="nomeUsuario">Seu nome:</label>
+                <input type="text" id="nomeUsuario">
+    
+                <label for="email">Seu E-mail:</label>
+                <input type="email" id="email">
+    
+                <label for="cll">Seu número:</label>
+                <input type="number" id="cll" placeholder="Opcional">
+    
+                <div class="check">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Ternos e Condições</label>
+                </div>
+                <button id="btn" type="submit">Enviar</button>
+                <p id="sucess"></p>
+            </form>
+        </main>
+    </div>
+    <script src="./src/scripts/main.js"></script>
+</body>
+</html>

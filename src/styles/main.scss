@@ -1,0 +1,82 @@
+@use 'cores';
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Bona Nova SC", serif;
+}
+body{
+    background-color: cores.$corDeFundo;
+}
+.container{
+    width: 369px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    text-align: center;
+    color: cores.$corDaFonte;
+    font-size: 1.2em;
+    background-color: cores.$corAltenativa;
+    padding: 10px 0px;
+    border-bottom: 2px solid cores.$corDaFonte;
+}
+form{
+    background-color: cores.$corAltenativa;
+    padding: 50px;
+    
+    label, input, button{
+        display: block;
+    }
+    label{
+        color: cores.$corDaFonte;
+        font-size: 1.2em;
+    }
+    input{
+        height: 30px;
+        font-size: 1.1em;
+        text-align: center;
+        border: none;
+        outline: none;
+        background-color: cores.$corAltenativa;
+        border-bottom:3px solid cores.$corDaFonte ;
+        color: cores.$corDaFonte;
+        &::placeholder{
+            color: cores.$corDaFonte;
+        }
+    }
+    button{
+        margin: 0 auto;
+        margin-bottom: 30px;
+        font-size: 1.1em;
+        padding: 10px 50px;
+        border: none;
+        outline: none;
+        background-color: cores.$corDoForm;
+        color: #000;
+        &:hover{
+            background-color: cores.$corHover;
+            cursor: pointer;
+        }
+    }
+
+    .check{
+        display: flex;
+        align-items: center;
+        margin: 10px 0px;
+
+        label{
+            margin-left: 10px;
+        }
+    }
+    #sucess{
+        color: cores.$corDaFonte;
+        font-size: 1.1em;
+        text-align: center;
+    }
+}
