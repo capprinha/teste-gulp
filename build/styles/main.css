@@ -38,9 +38,11 @@ form label, form input, form button {
 form label {
   color: #d6d58e;
   font-size: 1.2em;
+  text-align: start;
+  margin-bottom: 6px;
 }
-form input {
-  height: 30px;
+form .input {
+  width: 299px;
   font-size: 1.1em;
   text-align: center;
   border: none;
@@ -48,9 +50,12 @@ form input {
   background-color: #005c53;
   border-bottom: 3px solid #d6d58e;
   color: #d6d58e;
+  margin-bottom: 6px;
+  margin: 0 auto;
 }
-form input::placeholder {
+form .input::placeholder {
   color: #d6d58e;
+  font-size: 0.9em;
 }
 form button {
   margin: 0 auto;
@@ -69,6 +74,7 @@ form button:hover {
 form .check {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 10px 0px;
 }
 form .check label {

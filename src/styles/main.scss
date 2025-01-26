@@ -36,9 +36,11 @@ form{
     label{
         color: cores.$corDaFonte;
         font-size: 1.2em;
+        text-align:start;
+        margin-bottom: 6px;
     }
-    input{
-        height: 30px;
+    .input{
+        width: 299px;
         font-size: 1.1em;
         text-align: center;
         border: none;
@@ -46,8 +48,11 @@ form{
         background-color: cores.$corAltenativa;
         border-bottom:3px solid cores.$corDaFonte ;
         color: cores.$corDaFonte;
+        margin-bottom: 6px;
+        margin: 0 auto;
         &::placeholder{
             color: cores.$corDaFonte;
+            font-size: 0.9em;
         }
     }
     button{
@@ -68,6 +73,7 @@ form{
     .check{
         display: flex;
         align-items: center;
+        justify-content: center;
         margin: 10px 0px;
 
         label{
