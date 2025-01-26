@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Bona Nova SC", serif;
+}
+
+body {
+  background-color: #042940;
+}
+
+.container {
+  width: 369px;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  text-align: center;
+  color: #d6d58e;
+  font-size: 1.2em;
+  background-color: #005c53;
+  padding: 10px 0px;
+  border-bottom: 2px solid #d6d58e;
+}
+
+form {
+  background-color: #005c53;
+  padding: 50px;
+}
+form label, form input, form button {
+  display: block;
+}
+form label {
+  color: #d6d58e;
+  font-size: 1.2em;
+}
+form input {
+  height: 30px;
+  font-size: 1.1em;
+  text-align: center;
+  border: none;
+  outline: none;
+  background-color: #005c53;
+  border-bottom: 3px solid #d6d58e;
+  color: #d6d58e;
+}
+form input::placeholder {
+  color: #d6d58e;
+}
+form button {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-size: 1.1em;
+  padding: 10px 50px;
+  border: none;
+  outline: none;
+  background-color: #9fc131;
+  color: #000;
+}
+form button:hover {
+  background-color: #dbf227;
+  cursor: pointer;
+}
+form .check {
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+}
+form .check label {
+  margin-left: 10px;
+}
+form #sucess {
+  color: #d6d58e;
+  font-size: 1.1em;
+  text-align: center;
+}
